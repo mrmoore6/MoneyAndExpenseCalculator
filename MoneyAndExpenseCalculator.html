@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Money and Expense Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="appContainer">
+      <div class="title">
+        <h1>Money and Expense Calculator</h1>
+      </div>
+      <div id="hint" class="hint">Step 1: Choose your pay frequency, then type your hourly pay rate (e.g. 17.50)</div>
+      <div class="todoInput">
+        <input type="text" id="taskInput" placeholder="Hourly pay rate (e.g. 17.50)" />
+      </div>
+      <label for="payFrequency">Pay Frequency:</label
+      ><select id="payFrequency" title="Choose how often you get paid (locked after you enter your pay rate; press Clear to change)">
+        <option value="weekly">Weekly</option>
+        <option value="biweekly">Biweekly</option>
+      </select>
+      <div class="buttons">
+        <button id="enterBtn" title="Submit this value and go to the next step (or press the Enter key)">Enter</button>
+        <button id="clearBtn" title="Erase everything and start over from step 1">Clear</button>
+      </div>
+      <div class="tasks">
+        <p id="result"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
